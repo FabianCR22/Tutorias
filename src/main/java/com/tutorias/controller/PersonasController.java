@@ -22,6 +22,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @Slf4j
@@ -80,6 +83,27 @@ public class PersonasController {
         personaService.delete(id);
         return "redirect:/personas";
     
+    }
+    
+    @RequestMapping("/stats")
+    public ModelAndView statsADMIN() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("estadisticas");
+        return modelAndView;
+    }
+    
+    @RequestMapping("/homePROF")
+    public ModelAndView homePROF() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("homePROF");
+        return modelAndView;
+    }
+    
+    @RequestMapping("/homeSTUD")
+    public ModelAndView homeSTUD() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("homeSTUD");
+        return modelAndView;
     }
     
 }
