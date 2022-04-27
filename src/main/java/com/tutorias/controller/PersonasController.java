@@ -106,4 +106,32 @@ public class PersonasController {
         return modelAndView;
     }
     
+    @RequestMapping("/reservaSTUD")
+    public ModelAndView reservaSTUD() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("reservaSTUD");
+        return modelAndView;
+    }
+    
+    @RequestMapping("/bibliotecaSTUD")
+    public ModelAndView bibliotecaSTUD() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("bibliotecaSTUD");
+        return modelAndView;
+    }
+    
+    @RequestMapping("/calendarioPROF")
+    public ModelAndView calendarioPROF() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("calendarioPROF");
+        return modelAndView;
+    }
+    
+    @RequestMapping("/horarioPROF")
+    public ModelAndView horarioPROF() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("horarioPROF");
+        return modelAndView;
+    }
+    
 }

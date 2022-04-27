@@ -19,7 +19,41 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
         <header th:replace="plantilla/template::header"></header>
         
+        <br>
+        <h2>Dashboard</h2>
+        <br>
 
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Mes/Metrica</th>
+                    <th scope="col">Clases realizadas</th>
+                    <th scope="col">Reservas realizadas</th>
+                    <th scope="col">Numero de visitas a la pagina</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Enero</th>
+                    <td>10</td>
+                    <td>15</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <th scope="row">Febrero</th>
+                    <td>100</td>
+                    <td>150</td>
+                    <td>1500</td>
+                </tr>
+                <tr>
+                    <th scope="row">Marzo</th>
+                    <td>150</td>
+                    <td>170</td>
+                    <td>5000</td>
+                </tr>
+            </tbody>
+        </table>
+        
         
         <footer th:replace="plantilla/template::footer"></footer>
         
